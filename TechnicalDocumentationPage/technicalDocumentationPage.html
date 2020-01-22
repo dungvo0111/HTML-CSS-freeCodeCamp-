@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Documentation</title>
+        <link rel="stylesheet" hreF="style.css"/>
+        
+    </head>
+    <main id="main-doc">
+        <section class="main-section"id="What_is_HTML?">
+            <header>What is HTML?</header>
+            <p>HTML (Hypertext Markup Language) is not a programming language; it is a markup language used to tell your browser how to structure the web pages you visit. It can be as complicated or as simple as the web developer wishes it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of the content to make it appear or act a certain way. The enclosing tags can make a bit of content into a hyperlink to link to another page on the web, italicize words, and so on.  For example, take the following line of content:</p>
+            <code>My cat is very grumpy</code>
+            <p>If we wanted the line to stand by itself, we could specify that it is a paragraph by enclosing it in a paragraph  (&lt;p&gt;) element:</p>
+            <code>&lt;p&gt;My cat is very grumpy&lt;p&gt;</code>
+        </section>
+
+        <section class="main-section"id="What_is_the_HTML_head?">
+            <header>What is the HTML head?</header>
+            <p>Let's revisit the simple HTML document we covered in the previous article:</p>
+            <code>&lt;!DOCTYPE html&gt;<br>
+                &nbsp&lt;html&gt;<br>
+                &nbsp&nbsp</nbsp>&lt;head&gt;<br>
+                &nbsp&nbsp&nbsp&lt;meta charset="utf-8"&gt;<br>
+                &nbsp&nbsp&nbsp&lt;title&gt;My test page&lt;/title&gt;<br>
+                &nbsp&nbsp&lt;/head&gt;<br>
+                &nbsp&nbsp&lt;body&gt;<br>
+                &nbsp&nbsp&nbsp&lt;p&gt;This is my page&lt;/p&gt;<br>
+                &nbsp&nbsp&lt;/body&gt;<br>
+                &nbsp&lt;/html&gt;</code>
+            <p>The HTML head is the contents of the &lt;head&gt; element — unlike the contents of the &lt;body&gt; element (which are displayed on the page when loaded in a browser), the head's content is not displayed on the page. Instead, the head's job is to contain metadata about the document. In the above example, the head is quite small:</p> 
+            <code>&lt;head&gt;<br>
+                &nbsp&lt;meta charset="utf-8"&gt;<br>
+                &nbsp&lt;title&gt;My test page&lt;/title&gt;<br>
+                &lt;/head&gt;</code> 
+            <p>In larger pages however, the head can get quite full. Try going to some of your favorite websites and use the developer tools to check out their head contents. Our aim here is not to show you how to use everything that can possibly be put in the head, but rather to teach you how to use the major elements that you'll want to include in the head, and give you some familiarity. Let's get started.</p>              
+        </section>
+
+        <section class="main-section"id="HTML_text_fundamentals">
+            <header>HTML text fundamentals</header>
+            <p>One of HTML's main jobs is to give text structure and meaning (also known as semantics) so that a browser can display it correctly. This article explains the way HTML can be used to structure a page of text by adding headings and paragraphs, emphasizing words, creating lists, and more.</p>
+            <p>Most structured text consists of headings and paragraphs, whether you are reading a story, a newspaper, a college textbook, a magazine, etc.</p>
+            <p>Structured content makes the reading experience easier and more enjoyable.</p>
+            <p>In HTML, each paragraph has to be wrapped in a &lt;p&gt; element, like so:</p>
+            <code>&lt;p&gt;I am a paragraph, oh yes I am.&lt;p&gt;</code>
+            <p>Each heading has to be wrapped in a heading element:</p>
+            <code>&lt;h1&gt;I am the title of the story.&lt;/h1&gt;</code>
+        </section>
+
+        <section class="main-section"id="What_is_a_hyperlink?">
+            <header>What is a hyperlink?</header>
+            <p>Hyperlinks are one of the most exciting innovations the Web has to offer. Well, they've been a feature of the Web since the very beginning, but they are what makes the Web a Web — they allow us to link our documents to any other document (or other resource) we want to, we can also link to specific parts of documents, and we can make apps available at a simple web address (contrast this to native apps, which have to be installed and all that business.) Just about any web content can be converted to a link, so that when clicked (or otherwise activated) it will make the web browser go to another web address (URL).</p>
+            <p>A basic link is created by wrapping the text (or other content, see Block level links) you want to turn into a link inside an &lt;a&gt; element, and giving it an href attribute (also known as a Hypertext Reference , or target) that will contain the web address you want the link to point to.</p>
+            <code>&lt;p&gt;I'm creating a link to<br>
+                &lt;a href="https://www.mozilla.org/en-US/">the Mozilla homepage.&lt;/a&gt;<br>
+                &lt;/p&gt;</code>
+            <p>This gives us the following result:</p>
+            <p>I'm creating a link to <u style="color:rgb(25, 103, 204)">the Mozilla homepage.</u></p>
+        </section>
+
+        <section class="main-section"id="Document_and_website_structure">
+            <header>Document and website structure</header>
+            <p>Webpages can and will look pretty different from one another, but they all tend to share similar standard components, unless the page is displaying a fullscreen video or game, is part of some kind of art project, or is just badly structured:</p>
+            <ul>
+                <li><strong class="black">header:</strong><br>
+                Usually a big strip across the top with a big heading and/or logo. This is where the main common information about a website usually stays from one webpage to another.</li>
+                <li><strong class="black">navigation bar:</strong><br>
+                Links to the site's main sections; usually represented by menu buttons, links, or tabs. Like the header, this content usually remains consistent from one webpage to another — having inconsistent navigation on your website will just lead to confused, frustrated users. Many web designers consider the navigation bar to be part of the header rather than an individual component, but that's not a requirement; in fact, some also argue that having the two separate is better for accessibility, as screen readers can read the two features better if they are separate.</li>
+                <li><strong class="black">main content:</strong><br>
+                A big area in the center that contains most of the unique content of a given webpage, for example, the video you want to watch, or the main story you're reading, or the map you want to view, or the news headlines, etc. This is the one part of the website that definitely will vary from page to page!</li>
+                <li><strong class="black">sidebar:</strong><br>
+                Some peripheral info, links, quotes, ads, etc. Usually, this is contextual to what is contained in the main content (for example on a news article page, the sidebar might contain the author's bio, or links to related articles) but there are also cases where you'll find some recurring elements like a secondary navigation system.</li>
+                <li><strong class="black">footer:</strong><br>   
+                A strip across the bottom of the page that generally contains fine print, copyright notices, or contact info. It's a place to put common information (like the header) but usually, that information is not critical or secondary to the website itself. The footer is also sometimes used for SEO purposes, by providing links for quick access to popular content.</li>
+            </ul>
+        </section>
+
+        <section class="main-section"id="Reference">
+            <header>Reference</header>
+            <p>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML">MDN</a>.</p>
+        </section>
+    </main>
+
+    <nav id="navbar">
+        <header>HTML Documentation</header>
+        <ul id="nav">
+            <li><a class="nav-link" href="#What_is_HTML?">What is HTML?</a></li>
+            <li><a class="nav-link" href="#What_is_the_HTML_head?">What is the HTML head?</a></li>
+            <li><a class="nav-link" href="#HTML_text_fundamentals">HTML text fundamentals</a></li>
+            <li><a class="nav-link" href="#What_is_a_hyperlink?">What is a hyperlink?</a></li>
+            <li><a class="nav-link" href="#Document_and_website_structure">Document and website structure</a></li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+        
+    </nav>
+
+</html>

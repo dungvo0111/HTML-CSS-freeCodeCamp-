@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="style.css"/>
+
+<header>
+  <img src="https://user-assets.sharetribe.com/images/listing_images/images/2400690/big/5a7e34f3-93ed-494c-b547-e20fe3747597.jpeg?1569169010">
+  <div>
+  <h1 id="title">UniSport Otaniemi Survey Form</h1>
+  
+  <p id="description">We would appreciate you taking the time to give us some feedback on what upgrades you would like to improve your training at Unisport Otaniemi.</p>
+  </div>    
+</header>
+<main>
+<form id="survey-form" action="/submit-form">
+    <label for="name" id="name-label">Name</label><br>
+    <input required id="name" type="text" placeholder="Enter your name">
+    <br>
+    
+    <label for="email" id="email-label">Email</label><br>
+    <input required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="email" type="email" placeholder="Enter your email">
+    <br>
+    
+    <label for="age" id="number-label">Age</label><br>
+    <input id="number" type="number" placeholder="Enter your age" min="16" max="80" pattern="[0-9]+[0-9]">
+    <br>
+    
+    <label for="dropdown">How often do you train at Unisport?</label><br>
+    <select id="dropdown">
+      <option disabled selected value>Choose one</option>
+      <option value="rarely">1-2 times a week</option>
+      <option value="usually">3-5 times a week</option>
+      <option value="hardcore">7days a week</option>
+    </select><br>
+    
+    <p>How satisfied are you with the current equipment?</p>
+   
+  <label><input type="radio" name="satisfaction" value="highly unsatisfied">Highly unsatisfied</label><br>
+    <label><input type="radio" name="satisfaction" value="unsatisfied">Unsatisfied</label><br>
+    <label><input type="radio" name="satisfaction" value="neutral">Neutral</label><br>
+    <label><input type="radio" name="satisfaction" value="satisfied">Satisfied</label><br>
+    <label><input type="radio" name="satisfaction" value="highly satisfied">Highly satisfied</label><br>
+  
+    <p>Which equipment you wish to add more?</p>
+   
+  <label><input type="checkbox" name="equipment" value="declinebench">Decline bench</label><br>
+    <label><input type="checkbox" name="equipment" value="smithmachine">Smith machine</label><br>
+    <label><input type="checkbox" name="equipment" value="chestflymachine">Chest fly machine</label><br>
+    <label><input type="checkbox" name="equipment" value="treadmill">Treadmill</label><br>
+  
+    <p>Additional comments or suggestion:</p>
+    <textarea id="textarea" rows="5" cols="50"></textarea><br>
+    <button id="submit" type="submit">Submit</button>
+</form>    
+</main>   

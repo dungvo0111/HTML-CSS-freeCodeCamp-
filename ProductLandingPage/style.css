@@ -1,0 +1,87 @@
+h3 {
+    color:#A9A9A9;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    height: 100px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+  }
+  #header-img {
+    width:100px;
+   
+  }
+  .nav-link {
+    padding: 10px;
+    margin-right: 100px;
+    color: black;
+  }
+  .nav-link:hover {
+    color: blue;
+  }
+  @media (max-width: 600px) {
+    header {
+      flex-wrap: wrap;
+    }
+  }
+  
+  
+  #video {
+    margin-top: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #video-description {
+    text-align: center;
+  }
+  #features {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "item1 item2 item3"
+        "item1 item2 item3"
+        "desc1 desc2 desc3";
+    justify-items: center;
+    align-items: cneter;
+    
+    
+  }
+  .item1 {
+    grid-area: item1; 
+  }
+  .item2 {
+    grid-area: item2;
+  }
+  .item3 {
+    grid-area: item3;
+  }
+  
+  .desc1 {
+    grid-area: desc1;
+    text-align: center;
+    
+  }
+  .desc2 {
+    grid-area: desc2;
+    text-align: center;
+  }
+  .desc3 {
+    grid-area: desc3;
+    text-align: center;
+  }
+  
+  h4 {
+    text-align: center;
+  }
+  form {
+   text-align: center;
+  }
+  
